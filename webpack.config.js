@@ -13,6 +13,7 @@ if (!['production', 'development'].includes(MODE)) {
 
 module.exports = {
   mode: MODE,
+  devtool: 'source-map',
   entry: './src/index.js',
   devServer: { hot: true, static: './public' },
   output: {
